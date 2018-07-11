@@ -4,7 +4,7 @@
 # to your system, but you always can edit the sections below manually.
 #
 
-CC=		@CC@
+CC=		gcc-7.3.0
 CFLAGS=		@CFLAGS@
 RANLIB= 	@RANLIB@
 INSTALL=	@INSTALL@
