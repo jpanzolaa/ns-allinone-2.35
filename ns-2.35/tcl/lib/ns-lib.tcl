@@ -194,6 +194,7 @@ source ns-namsupp.tcl
 source ../mobility/dsdv.tcl
 source ../mobility/dsr.tcl
 source ../mobility/com.tcl
+source ../mobility/noah.tcl
 
 source ../plm/plm.tcl
 source ../plm/plm-ns.tcl
@@ -643,6 +644,9 @@ Simulator instproc create-wireless-node args {
 			    Simulator set IMEPFlag_ ON
 			    set ragent [$self create-tora-agent $node]
 		    }
+		    NOAH {
+		    	    set ragent [$self create-noah-agent $node]
+	    	    }
 		    DIFFUSION/RATE {
 			    eval $node addr $args
 			    set ragent [$self create-diffusion-rate-agent $node]
@@ -784,6 +788,25 @@ Simulator instproc create-node-instance args {
 		set nodeclass Node/MobileNode
 	}
 	return [eval new $nodeclass $args]
+}
+
+Simulator instproc create-noah-agent { node } {
+    # Create a noah routing agent for this node
+    set ragent [new Agent/NOAH]
+
+    ## setup address (supports hier-addr) for noah agent
+    ## and mobilenode
+    set addr [$node node-addr]
+
+    $ragent addr $addr
+    $ragent node $node
+
+    if [Simulator set mobile_ip_] {
+        $ragent port-dmux [$node demux]
+    }
+    $node addr $addr
+    $node set ragent_ $ragent
+    return $ragent
 }
 
 Simulator instproc set-dsr-nodetype {} {
