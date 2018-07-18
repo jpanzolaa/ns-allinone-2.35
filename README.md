@@ -7,11 +7,12 @@ In the terminal console run the next command.
 
 $ ./install-ns2.sh
 
-Test the installation with the command ns
+Test the installation with the command ns:
 $ ns
 %
 % exit
 $
+
 
 
 
