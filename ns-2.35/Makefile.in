@@ -278,6 +278,7 @@ OBJ_CC = \
 	aomdv/aomdv_logs.o aomdv/aomdv.o \
 	aomdv/aomdv_rtable.o aomdv/aomdv_rqueue.o \
 	puma/puma.o \
+	noah/noah.o \
 	mdart/mdart_adp.o mdart/mdart_dht.o mdart/mdart_ndp.o \
 	mdart/mdart_neighbor.o mdart/mdart_queue.o mdart/mdart_table.o \
 	mdart/mdart.o \
@@ -494,6 +495,7 @@ NS_TCL_LIB = \
 	tcl/mcast/McastMonitor.tcl \
 	tcl/mobility/dsdv.tcl \
 	tcl/mobility/dsr.tcl \
+	tcl/mobility/noah.tcl \
         tcl/ctr-mcast/CtrMcast.tcl \
         tcl/ctr-mcast/CtrMcastComp.tcl \
         tcl/ctr-mcast/CtrRPComp.tcl \
