@@ -34,19 +34,19 @@ cd ns-allinone-2.35
 ruta=$PWD
 
 echo "# LD_LIBRARY_PATH" >> ~/.bashrc
-echo "OTCL_LIB=$ruta/otcl-1.14" >> ~/.bashrc
+echo "OTCL_LIB=$ruta/otcl-1.14/" >> ~/.bashrc
 echo "NS2_LIB=$ruta/lib/" >> ~/.bashrc
-echo "X11_LIB=/usr/X11R6/lib" >> ~/.bashrc
-echo "USR_LOCAL_LIB=/usr/local/lib" >> ~/.bashrc
+echo "X11_LIB=/usr/X11R6/lib/" >> ~/.bashrc
+echo "USR_LOCAL_LIB=/usr/local/lib/" >> ~/.bashrc
 echo "export LD_LIBRARY_PATH=\$LD_LIBRARY_PATH:\$OTCL_LIB:\$NS2_LIB:\$X11_LIB:\$USR_LOCAL_LIB" >> ~/.bashrc
 echo "# TCL_LIBRARY" >> ~/.bashrc
-echo "TCL_LIB=$ruta/tcl8.5.10/library" >> ~/.bashrc
-echo "USR_LIB=/usr/lib" >> ~/.bashrc
+echo "TCL_LIB=$ruta/tcl8.5.10/library/" >> ~/.bashrc
+echo "USR_LIB=/usr/lib/" >> ~/.bashrc
 echo "export TCL_LIBRARY=\$TCL_LIB:\$USR_LIB" >> ~/.bashrc
 echo "# PATH" >> ~/.bashrc
 echo "XGRAPH=$ruta/xgraph-12.2/:$ruta/bin/:$ruta/tcl8.5.10/unix/:$ruta/tk8.5.10/unix/" >> ~/.bashrc
-echo "NS=$ruta/ns-2.35" >> ~/.bashrc 
-echo "NAM=$ruta/nam-1.15" >> ~/.bashrc 
+echo "NS=$ruta/ns-2.35/" >> ~/.bashrc 
+echo "NAM=$ruta/nam-1.15/" >> ~/.bashrc 
 echo "PATH=\$PATH:\$XGRAPH:\$NS:\$NAM" >> ~/.bashrc
 
 sleep 2
