@@ -18,10 +18,15 @@ sudo apt-get upgrade
 sudo apt-get dist-upgrade
 sudo apt-get autoremove
 sudo apt install gcc-4.8 g++-4.8
-sudo apt-get install build-essential autoconf automake 
-sudo apt-get install tcl8.5-dev tk8.5-dev
-sudo apt-get install perl libxt-dev libx11-dev libxmu-dev xgraph
-sudo apt install nam
+sudo apt install build-essential autoconf automake libxmu-dev 
+sudo apt install tcl8.5-dev 
+sudo apt install tk8.5-dev
+sudo apt-get install perl 
+sudo apt install libxt-dev 
+sudo apt install libx11-dev 
+sudo apt install libxmu-dev 
+sudo apt install xgraph
+sudo apt install -y nam
 
 # 2. INSTALL THE LIBRARY
 
