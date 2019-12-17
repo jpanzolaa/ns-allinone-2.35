@@ -26,7 +26,6 @@ sudo apt install libxt-dev
 sudo apt install libx11-dev 
 sudo apt install libxmu-dev 
 sudo apt install xgraph
-sudo apt install -y nam
 
 # 2. INSTALL THE LIBRARY
 
